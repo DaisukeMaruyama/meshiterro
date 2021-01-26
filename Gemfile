@@ -30,7 +30,7 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'kaminari','~> 1.2.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

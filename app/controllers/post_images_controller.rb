@@ -5,11 +5,12 @@ class PostImagesController < ApplicationController
   end
 
   def index
-    @post_images = PostImage.all.order(create_at: :desc)
+    @post_images = PostImage.all.order(created_at: :desc).page(params[:page]).per(5)
   end
 
   def show
     @post_image = PostImage.find(params[:id])
+    @post_comment = PostComment.new
   end
 
   def create
